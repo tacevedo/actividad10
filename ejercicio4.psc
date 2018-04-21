@@ -6,14 +6,23 @@ Algoritmo ejercicio4
 	Escribir "Ingresa tercer numero"
 	Leer num3
 	
-	Si num1 > num2 Entonces
-		si num1 > num3 Entonces
-			Escribir "El numero mayor es el primero: ", num1
-		sino
-			
+		si num1 > num2 Entonces
+			aux = num1
+			si aux < num3 Entonces
+				aux = num3
+				Escribir  "el numero mayor es ", num3
+			SiNo
+				Escribir "el numero mayor es ", num1
+			FinSi
+		SiNo
+			aux = num2
+			si aux < num3 Entonces
+				aux = num3
+				Escribir  "el numero mayor es ", num3
+			SiNo
+				Escribir "el numero mayor es ", num2
+			FinSi
 		FinSi
-	SiNo
-		acciones_por_falso
-	Fin Si
+
 	
 FinAlgoritmo
